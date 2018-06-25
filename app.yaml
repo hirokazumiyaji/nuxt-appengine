@@ -1,0 +1,12 @@
+runtime: nodejs8
+env: standard
+service: web
+skip_files:
+  - .git/
+  - ^(.*/)?\.md$
+  - node_modules/
+handlers:
+- url: /_nuxt
+  static_dir: .nuxt
+- url: /.*
+  script: auto
