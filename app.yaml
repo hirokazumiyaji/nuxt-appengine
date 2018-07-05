@@ -7,6 +7,6 @@ skip_files:
   - node_modules/
 handlers:
 - url: /_nuxt
-  static_dir: .nuxt
+  static_dir: .nuxt/dist
 - url: /.*
   script: auto
